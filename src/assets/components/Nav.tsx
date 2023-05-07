@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <div>
-      <div className="z-10 top-0 left-0 right-0 bg-black text-white p-2 flex justify-between items-center">
+      <nav className="z-10 top-0 left-0 right-0 bg-black text-white p-2 flex justify-between items-center">
         <div className="w-16 h-16">
           <img
             className="w-full"
@@ -50,7 +50,7 @@ const Nav = () => {
             Cart
           </NavLink>
         </div>
-      </div>
+      </nav>
     </div>
   );
 };

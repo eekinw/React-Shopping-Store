@@ -1,4 +1,5 @@
 import image from "../image.jpg";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,9 +11,11 @@ const Hero = () => {
         <h1 className="text-white text-4xl font-bold tracking-widest">
           Welcome To Our Store!
         </h1>
-        <button className="mt-5 bg-green-400 py-2 px-4 rounded-full text-white hover:scale-105 cursor-pointer">
-          Shop Now
-        </button>
+        <NavLink to="/store">
+          <button className="mt-5 bg-green-400 py-2 px-4 rounded-full text-white hover:scale-105 cursor-pointer">
+            Shop Now
+          </button>
+        </NavLink>
       </div>
     </div>
   );
