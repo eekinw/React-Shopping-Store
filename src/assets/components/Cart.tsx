@@ -1,5 +1,12 @@
+import Nav from "../components/Nav";
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return (
+    <>
+      <Nav />
+      <div>Cart</div>
+    </>
+  );
 };
 
 export default Cart;

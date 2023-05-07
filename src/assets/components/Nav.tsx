@@ -13,13 +13,40 @@ const Nav = () => {
         </div>
 
         <div className="flex p-2 gap-5">
-          <NavLink className="hover:text-cyan-400" to="/">
+          <NavLink
+            to="/"
+            style={({ isActive, isPending }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+                color: isPending ? "" : "white",
+                fontSize: isActive ? "large" : "",
+              };
+            }}
+          >
             Home
           </NavLink>
-          <NavLink className="hover:text-cyan-400" to="/store">
+          <NavLink
+            to="/store"
+            style={({ isActive, isPending }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+                color: isPending ? "" : "white",
+                fontSize: isActive ? "large" : "",
+              };
+            }}
+          >
             Store
           </NavLink>
-          <NavLink className="hover:text-cyan-400" to="/cart">
+          <NavLink
+            to="/cart"
+            style={({ isActive, isPending }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+                color: isPending ? "" : "white",
+                fontSize: isActive ? "large" : "",
+              };
+            }}
+          >
             Cart
           </NavLink>
         </div>
