@@ -4,6 +4,7 @@ import Home from "./assets/components/Home";
 import Store from "./assets/components/Store";
 import Cart from "./assets/components/Cart";
 import NoMatch from "./assets/components/NoMatch";
+import ProductDetails from "./assets/components/ProductDetails";
 
 function App() {
   useEffect(() => {
@@ -19,7 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart />} index />
+        <Route path="/store/:id" element={<ProductDetails />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>
@@ -27,3 +29,6 @@ function App() {
 }
 
 export default App;
+
+// to create a nested route: path="/store/:id"
+// useParams hook
